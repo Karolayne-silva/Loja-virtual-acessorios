@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    
+    <title>Raveny</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Raveny</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promoção</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Novidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Mais Vendidos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="pesquisa" class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Acaba o HEADER-->
+      <main>
+
+        <section class="flex">
+            <div class="img">
+                <img src="1625129904344b999652d8d20af9f11fc20acdbd38_thumbnail_900x.webp" alt="colar estrelinha">
+            </div>
+            <div class="detalhes">
+                <p>2 peças estrela lua charme colar</p>
+                <hr>
+                <h1>R$ 6,99</h1>
+                <h2>Tamanho</h2>
+                <button class="bot-tamanho" type="submit">Tamanho único</button>
+                
+
+                <div class="quantidade">
+                <p class="descricao">Colar dourado de estrelinhas com lua com o tamanho de 30cm, pode ser usado como chocker ou colar normal</p>
+                <p class="quant">Quantidade</p>
+
+                <select name="select" id="quant-select" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                <button class="bot-carrinho" onclick="myFunction()">Adicionar ao carrinho</button>
+                <br>
+                <p>Valor Total: </p>
+                <p id="total">0</p>
+
+                </div>
+
+                <button class="bot-comprar" onclick="zerar()">Comprar</button>
+                
+            </div>
+        </section>
+
+        <section>
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#Comentarios">Comentarios</a></li>
+              <li><a data-toggle="tab" class="titulo-a" href="#Videos">Videos</a></li>
+              <li><a data-toggle="tab" class="titulo-a" href="#Fotos">Fotos</a></li>
+              
+            </ul>
+          
+            <div class="tab-content">
+              <div id="Comentarios" class="tab-pane fade in active">
+                <h3>Larissa Lima</h3>
+                <hr>
+                <p>Colar lindo!</p>
+                <h3>Juliana Soares</h3>
+                <hr>
+                <p>Adorei e não ficou preto</p>
+                <h3>Karol Silva</h3>
+                <hr>
+                <p>Não gostei, ficou preto rápido e me deu alergia</p>
+                <h3>Raul Lima</h3>
+                <hr>
+                <p>Comprei pra minha namorada e depois ela terminou comigo, mas ela gostou</p>
+                
+              </div>
+              <div id="Videos" class="tab-pane fade">
+                <video src="pinterest-video.mp4" width="600px" height="500px" preload="auto" controls></video>
+              </div>
+              <div id="Fotos" class="tab-pane fade">
+                <h2>Outros colares nossos</h2>
+                <img src="29f480aee37bb1e2ed8e86bf51226db3.jpg" alt="">
+                <img src="a2c72e91aaf146fe18a29a4e3cc3a6e4.jpg" alt="">
+                <img src="74ba16ef992f44bff2a00fb992847881.jpg" alt="">
+                <img src="cc879eb32d9855fbffa3c5b279972db2.jpg" alt="">
+              </div>
+            </div>
+        </section>
+
+      </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
